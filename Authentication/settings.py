@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)m_1yqb!&gb%_8q)xk!vljcxdel0x&+%di*&10t+j(88x0vh(h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shortify.up.railway.app', '127.0.0.1']
 
 
 # Application definition

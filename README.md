@@ -1,6 +1,6 @@
 # URL Shortener
 
-This is a simple URL shortener web application created using HTML, CSS, and JavaScript. The design of this application is taken from [frontendmentor.com](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).
+This is a simple URL shortener web application created using HTML, CSS, JavaScript and Python..
 
 ## Table of Contents
 
