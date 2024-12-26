@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)m_1yqb!&gb%_8q)xk!vljcxdel0x&+%di*&10t+j(88x0vh(h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shortify.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'Auth_app',
     
 
-    'django.contrib.sites',           # Required by allauth
+    'django.contrib.sites',   
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -98,11 +98,10 @@ import dj_database_url
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
@@ -141,6 +140,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICSTORAGE = 'whitenoise.storage.'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
