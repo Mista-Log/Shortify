@@ -93,7 +93,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Authentication.wsgi.application'
 
-import dj_database_url
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
