@@ -1,3 +1,1 @@
-web: gunicorn shortify.wsgi
-
-web: python manage.py migrate && gunicorn shortify.wsgi
+web: gunicorn Authentication.wsgi --log-file -
